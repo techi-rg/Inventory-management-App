@@ -4,12 +4,23 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
   "main": "index.js",
+   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "express": "^5.1.0"
-  }
+   
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techi-rg/Inventory-management-App.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/techi-rg/Inventory-management-App/issues"
+  },
+  "homepage": "https://github.com/techi-rg/Inventory-management-App#readme"
 }
