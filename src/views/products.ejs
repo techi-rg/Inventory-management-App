@@ -1,0 +1,31 @@
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+             <%  products.forEach(product=>{ %>
+                <tr>
+                    <th><%= product.id %></th>
+                    <td><%= product.name %></td>
+                    <td><%= product.desc %></td>
+                    <td scope="col"><%= product.price%></td>
+                    <td>
+                    <img src="<%= product.imageUrl %>"> 
+                    </td>
+                </tr>
+               
+    <% }) %> 
+     <!-- here we are using ejs syntax to loop through the products array and display each product's details in a table row. through ejs we can embed javascript code within the html code  when we run this code this ejs code will be converted into plain html in browser- after rendering it will become same as it was before->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

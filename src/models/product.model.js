@@ -1,6 +1,5 @@
 
 
-
 export default class ProductModel
 {
     constructor( id, _name, _desc, _price, _imageUrl )
