@@ -5,6 +5,10 @@ import path from "path";
 
 const server = express();
 
+// parse form data
+
+server.use( express.urlencoded( { extended: true } ) );
+
 
 // set up view engines setting
 
@@ -17,6 +21,9 @@ server.use( ejsLayouts );
 const productController = new ProductController();
 
 server.get( '/', productController.getProducts );
+server.get( '/new', productController.getAddForm );
+server.post( '/', productController.addnewProduct );
+
 
 server.use( express.static( 'src/views' ) )
 
